@@ -1,70 +1,150 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PORTFOLIO CHIRANTH </title>
-</head>
-<body>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>chiranth.R | Web Developer Portfolio</title>
+    <meta
+      name="description"
+      content="Full-stack web developer specializing
+          in React and Node.js. Available for freelance projects."
+    />
+    <meta
+      name="keywords"
+      content="web developer, React, JavaScript, portfolio"
+    />
+    <meta name="author" content="Chiranth" />
+
+    <meta property="og:title" content="chiranth | Web Developer" />
+    <meta
+      property="og:description"
+      content="Check out my portfolio and projects!"
+    />
+    <meta property="og:image" content="https://chiranth.com/preview.jpg" />
+    <meta property="og:url" content="https://chiranth.com" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Chiranth | Web Developer" />
+    <meta name="twitter:description" content="Check out my portfolio!" />
+    <link rel="icon" href="../logo.jpg" />
+  </head>
+  <body>
     <header>
-        <h1>Welcome to My Portfolio</h1>
-        <h3>Hi, I'm CHIRANTH , a passionate web developer and designer.</h3>
-        <p> I'm from Bengaluru </p>
-        <a href="#hire">hire me </a>
-          </header>
-    <section id="about">
-        <h2>About Me</h2>
-        <img src="../DSCN8510.JPG" alt="Profile Picture" width="200px" height="200px"> 
-        <p>I am a web developer with a strong background in front-end and back-end development. I enjoy creating beautiful and functional websites that provide an excellent user experience.</p>
-     </section>
-    <section id="skills">
-        <h2>Skills</h2>
+      <nav>
+        <div class="logo">CH</div>
         <ul>
-            <li>HTML, CSS, JavaScript</li>
-            <li>React, Angular</li>
-            <li>Node.js, Express</li>
-            <li>Python, Django</li>
-            <li>Database Management (MySQL, MongoDB)</li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-    </section>
-    <section id="projects">
+        <button
+          class="theme-toggle"
+          aria-label="toggle dark mode "
+          title="dark mode "
+        >
+          🌛
+        </button>
+        <button
+          class="menu-toggle"
+          aria-label="toggle navigation"
+          aria-expanded="false"
+        >
+          ≡
+        </button>
+      </nav>
+    </header>
+    <main>
+      <section id="hero" class="hero section">
+        <h1>Welcome to My Portfolio</h1>
+        <h3>Hi 👋, I'm CHIRANTH , a passionate web developer and designer.</h3>
+        <p>I'm from Bengaluru</p>
+        <div class="hero-button">
+          <a href="#project"> View My Work </a>
+          <a href="@contact"> Contact Me </a>
+        </div>
+      </section>
+      <section id="about" class="about-section">
+        <h2>About Me</h2>
+        <figure class="profile-figure">
+          <img
+            src="../DSCN8510.JPG"
+            alt="profile photo"
+            width="200px"
+            height="200px"
+          />
+          <figcaption>chiranth web developer</figcaption>
+        </figure>
+        <p>
+          I am a web developer with a strong background in front-end and
+          back-end development. I enjoy creating beautiful and functional
+          websites that provide an excellent user experience.
+        </p>
+      </section>
+      <a href="#hire">hire me </a>
+
+      <section id="skills" class="skill-section">
+        <h2>Skills</h2>
+        <div class="skill-grid">
+          <div class="skill-grid" data-level="90">HTML</div>
+          <div class="skill-grid" data-level="80">CSS</div>
+          <div class="skill-grid" data-level="75">JavaScript</div>
+          <div class="skill-grid" data-level="60">React</div>
+        </div>
+      </section>
+      <section id="projects" class="profile-section">
         <h2>Projects</h2>
-            <h3>Project 1: Portfolio Website</h3>
-            <p>A personal portfolio website showcasing my skills and projects.</p>
-            <a href="#">View Project</a>
-    </section>  
-
-    <section id="contact">
-        <!--<h2>Contact Me</h2>
-        <p>If you'd like to get in touch, feel free to reach out via email or connect with me on social media.</p>
-        <p>Email: <a href="chiranthakhilesh@gmail.com">25etai410055@msruas.ac.in</a> </p>
-        <p>GitHub: <a href="https://github.com/chiranth-cloud">chiranth </a></p>-->
-        <h2>Contact Me </h2>
-        <p>Have a project in mind ? Let's talk</p>
-        <form action="">
-            <label for="name">NAME</label>
-            <input type="text" placeholder="enter your name" name="name" id="name" required>
+        <div class="project-grid">
+          <article class="project-card" data-category="web">
+            <img
+              src="project11.webp"
+              alt="weather app screenshot"
+              width="200px"
+              height="150px"
+            />
+            <h3>Weather App</h3>
+            <p>Real-Time weather dashboard using OpenWeather API</p>
+            <div class="project_tag">
+              <span>React</span>
+              <span>API</span>
+            </div>
+            <a href="#">Live Demo</a>
+            <a href="#">GitHub</a>
+          </article>
+        </div>
+      </section>
+      <section id="contact" class="contact-section">
+        <h2>Get In Touch</h2>
+        <form action="#" method="post" novalidate>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
             <label for="email">Email</label>
-            <input type="email" placeholder="enter the email" name="email" id="email">
-            <label for="subject">SUBJECT</label>
-            <select name="subject" id="subject">
-                <option value="hire">I want to hire you </option>
-                <option value="collab">I want to collabrate </option>
-                <option value="other"> Other </option>
-            </select><br>
-            <label for="Message">Message</label>
-            <textarea placeholder="about yourself " name ="Message" id="Message"></textarea>
-            <button type="submit"> Submit Message 📩</button>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="form-group">
+            <label for="message"> Message</label>
+            <textarea name="message" id="message" rows="5" required></textarea>
+          </div>
 
-
+          <button type="submit" class="btn btn-primary">send message 📩</button>
         </form>
- 
-    </section>
-</body>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <p>&copy; chiranth.R built with HTML & CSS 💕</p>
+      <nav aria-label="socialmedia links">
+        <a href="https://github.com/chiranth-cloud" target="_blank">GitHub</a>
+        <a
+          href="https://www.linkedin.com/in/chiranth-akhilesh-99a497303/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BAZdXq8azTi21hizvxW5q6g%3D%3D"
+          target="_blank"
+          >LinkedIn</a
+        >
+      </nav>
+    </footer>
+  </body>
 </html>
