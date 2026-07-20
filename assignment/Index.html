@@ -28,24 +28,27 @@
     <meta name="twitter:title" content="Chiranth | Web Developer" />
     <meta name="twitter:description" content="Check out my portfolio!" />
     <link rel="icon" href="../logo.jpg" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylesheet.css">
 
 </head>
 <body>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
     <header>
-        <h1>Welcome to My Portfolio</h1>
+         <nav class="navbar">
+            <ul class="nav-link"></ul>
+        <li><a href="#about">About</a></li>
+       <li><a href="#skills">Skills</a></li> 
+       <li> <a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </nav>
+    </header>
+    <main>
+        <section id="hero" class="hero-section">
+             <h1>Welcome to My Portfolio</h1>
         <h3>Hi, I'm chiranth. I am learning Full Stack Development.</h3>
         <p>I'm from India ,Bengaluru.</p>
         <a href="#contact">Hire Me</a>
-    </header>
-    <section id="about">
+        </section>
+        <section id="about" class="about-section">
         <h2>About Me</h2>
         <figure>
         <img src="photo profile.jpeg" alt="Profile Picture" width="200px" height="200px">
@@ -53,17 +56,19 @@
         <p>I am learning Full Stack Development. I enjoy creating simple web pages and web sites 
             and improving my coding skills every day.</p>
             </figure>
-    </section>
-    <section id="skills">
+             </section>
+    
+    <section id="skills" class="skill-section">
         <h2>Skills</h2>
-        <ul>
-            <li>HTML</li>
-            <li>Basic CSS</li>
-            <li>Learning JavaScript</li>
-            <li>Basic C Programming</li>
-            <li>Basic c++ programming </li>
-        </ul>
-            <h2>Skills Table</h2>
+        <div class="skill-grid">
+           <div class="skill-item"  data-level="90">HTML</div>
+            <div class="skill-item"  data-level="90">Basic CSS</div>
+             <div class="skill-item"  data-level="90">Basic JavaScript</div>
+              <div class="skill-item"  data-level="90">Basic C++</div>
+        </div>
+        </section>
+        <section class="table" id="skill-table">
+             <h2>Skills Table</h2>
         <table border="1">
 
             <tr>
@@ -103,6 +108,8 @@
             </tr>
 
         </table>
+        </section>
+           
         <h2>Learning Journey</h2>
         <ol>
             <li>Started learning C++ Programming.</li>
@@ -111,32 +118,48 @@
             <li>Learning CSS and JavaScript.</li>
         </ol>
     </section>
-    <section id="projects">
+    <section id="projects" class="project-section">
         <h2>Projects</h2>
-
-        <h3>Project 1: Portfolio Website</h3>
-        <p>A simple portfolio website created using HTML.</p>
-        <a href="#">View Project</a>
-
-        <h3>Project 2: Student Management System</h3>
-        <p>A simple webpage to store student details.</p>
-        <a href="#">View Project</a>
-
-        <h3>Project 3: Calculator</h3>
-        <p>A basic calculator using HTML, CSS and JavaScript.</p>
-        <a href="#">View Project</a>
+        <div class="project-grid">
+            <article class="project-card" data-category="web">
+            <img src="../logo.jpg" alt="project phhoto" width="300px" height="150px">
+            <h3>portfolio</h3>
+            <p>A portfolio made using HTML</p>
+            <div class="project_tag">
+                <span>React</span>
+                <span>API</span>
+            </div>
+            <a href="#">live demo</a>
+            <a href="#">GitHub</a>
+        </article>
+        <section id="projects" class="project-section">
+        <h2>Projects 2 </h2>
+        <div class="project-grid">
+            <article class="project-card" data-category="web">
+            <img src="../logo.jpg" alt="project phhoto" width="300px" height="150px">
+            <h3>portfolio</h3>
+            <p>A portfolio made using HTML</p>
+            <div class="project_tag">
+                <span>React</span>
+                <span>API</span>
+            </div>
+            <a href="#">live demo</a>
+            <a href="#">GitHub</a>
+        </article>
+        </section>
         
         <h3>Project DEMO VIDEO</h3>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/hlwlM4a5rxg?si=wEM_PBjU59yE6Hpn" title="YouTube video player" frameborder="0" allow="accelerometer;  
         autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-    </section>
-    <section id="contact">
+    </main>
+    <footer class="site-footer">
         <h2>Contact Me</h2>
         <p>If you'd like to get in touch, feel free to reach out via email or connect with me on social media.</p>
-        <p>Email: <a href="mailto:chiranthakhilesh@gmail.com" target="_blank">chiranthakhilesh@gmail.com</a> </p>
+        <nav aria-label="socialmedia links">
+            <p>Email: <a href="mailto:chiranthakhilesh@gmail.com" target="_blank">chiranthakhilesh@gmail.com</a> </p>
         <p>GitHub: <a href="https://github.com/chiranth-cloud" target="_blank">chiranth </a></p>
-        <p>LinkedIn:<a href="https://www.linkedin.com/feed/" target="_blank">My LinkedIn</a></p>
-        </section> 
+        <p>LinkedIn:<a href="https://www.linkedin.com/feed/" target="_blank">My LinkedIn</a></p> 
+        </nav>
+    </footer>
 </body>
-</html
+</html>
