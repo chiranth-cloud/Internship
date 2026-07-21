@@ -76,6 +76,11 @@ header {
     font-weight: bold;
     text-align: center;
     font-size: 1.1rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.skill-item:hover{
+     transform: translateY(-5px);
+    box-shadow:0 10px 30px rgba(0, 0, 0, 0.819);
 }
 .project-grid{
     display: grid;
@@ -89,6 +94,11 @@ header {
     color: #FFFFFF;
     overflow: hidden;
     text-align: center;
+    transition: transform 0.3s,box-shadow 0.3s;
+}
+.project-card:hover{
+     transform: translateY(-5px);
+    box-shadow:0 15px 40px rgba(0, 0, 0, 0.819);
 }
 .project-card img{
     width: 100%;
@@ -99,4 +109,83 @@ header {
     text-decoration: none;
     color:var(--accent);
    
+}
+.btn{
+    display: inline-block;
+    padding: 12px  28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600px;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+.btn-primary{
+    background-color: var(--accent);
+    color: var(--white);
+}
+.btn-primary:hover{
+    background-color: transparent;
+    color: plum;
+    border-color: purple;
+}
+section{
+    padding: 80px 4%;
+}
+section h2{
+    font-size:3rem;
+    text-align: center;
+    margin-top: 50px;
+    position: relative;
+}
+section h2::after{
+    content: "";
+    display:block;
+    height: 4px;
+    width: 70px;
+    background-color: var(--accent);
+    margin: 12px auto 0;
+    border-radius: 3px;
+
+}
+@keyframes fadeinup{
+    from{opacity: 0; transform: translateY(30px);}
+    to{
+        opacity: 1; transform: translateY(0);
+    }
+}
+.tagline{
+    animation: fadeinup 0.8 ease 0.2s both;
+}
+.hero-button{
+     animation: fadeinup 0.8 ease 0.2s both;
+}
+.hero-section h1{
+        animation: fadeinup 0.8 ease 0.2s both;
+}
+.contact-section{
+    max-width: 600px;
+    margin:0 auto;
+}
+.form-group{
+    margin-bottom: 20px;
+}
+.form-group label{
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--primary);
+}
+.form-group input, .form-group textarea{
+    width: 100%;
+    padding:14px 16px;
+    border: 2px solid plum;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.3s;
+}
+.form-group input :focus,.form-group textarea:focus{
+    outline: none;
+    border-color: var(--primary)
+    box-shadow: 0 0 0 3px rgba(27,79,114,0.15);
 }
