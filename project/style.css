@@ -159,7 +159,10 @@ section h2::after{
 .hero-button{
      animation: fadeinup 0.8 ease 0.2s both;
 }
-.hero-section h1{
+.hero-section h1 {
+        animation: fadeinup 0.8 ease 0.2s both;
+}
+.hero-section h3 {
         animation: fadeinup 0.8 ease 0.2s both;
 }
 .contact-section{
