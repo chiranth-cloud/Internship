@@ -189,6 +189,6 @@ section h2::after{
 }
 .form-group input :focus,.form-group textarea:focus{
     outline: none;
-    border-color: var(--primary)
+    border-color: var(--primary);
     box-shadow: 0 0 0 3px rgba(27,79,114,0.15);
 }
